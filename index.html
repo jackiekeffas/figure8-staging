@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+  <head>
+    <!-- BASIC -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>The Figure 8 Group LLC</title>
+
+    <!-- FAVICON-->
+    <link rel="icon" type="image/png" href="static/images/favicon.png">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  </head>
+
+  <body class="h-100" data-bs-spy="scroll" data-bs-target="#navbar">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
+        <div>
+          <a class="navbar-brand brand-4" href="#" role="button">The Figure 8 Group LLC</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="ri-menu-line"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Packages
+                <i class="ri-arrow-down-s-line"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#kitchen">Kitchen</a></li>
+                <li><a class="dropdown-item" href="#bar">Bar</a></li>
+                <li><a class="dropdown-item" href="#service">Service</a></li>
+                <li><a class="dropdown-item" href="#social">Social + PR</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#charity">Charity</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="header-wrapper w-100 h-100 d-flex align-items-center text-center">  
+      <header class="container-fluid">
+        <h1 class="display">The Figure 8 Group LLC</h1>
+        <div id="bm" class="fireball" role="presentation"> </div>
+        <audio id="music" autoplay loop>
+          <source src="static/audio/figure-8-intro.mp3" type="audio/mpeg">
+        </audio>
+        <div>
+          <button id="audio-controls" class="btn btn-sm btn-icon" onclick="playAudio()" aria-pressed="false" aria-label="Play audio" type="button"><i class="ri-volume-up-line"></i></button>
+        </div>
+        <div>
+          <button id="animation-controls" class="btn btn-sm btn-icon" onclick="toggleAnimation()" aria-pressed="false" aria-label="Play animation" type="button"><i class="ri-play-line"></i></button>
+        </div>
+      </header>
+    </div>
+
+    <div class="dark-gradient">
+      <main class="container mb-auto">
+        <div class="section text-center" id="about">
+          <div class="row justify-content-center">
+            <div class="col-12 col-xl-8">
+              <p class="lead mb-4">The Figure 8 Group LLC focuses on perfecting the execution of your entire operation. Understanding what “Figure 8” represents, if you are an owner or a manager and you touch tables, go to the bar, oversee the expo window, spend time at the host stand... Knowing your restaurant every shift will lead you to a profitable P&L.</p>
+              <p class="lead mb-0"><b>“If you don’t take care of your guests, another restaurant will.”</b></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section packages">
+          <div class="row" id="kitchen">
+            <div class="col-12 col-md col-overlap-left">
+              <img src="static/images/kitchen.png" class="img-fluid" alt="Person plating food in a kitchen">
+            </div>
+            <div class="col-12 col-md col-overlap-right col-overlap-text">
+              <h2 class="display">Legendary <br>Kitchen</h2>
+              <ol>
+                <li>Set legendary standards in the kitchen from cleaning, storage, checking in product, hot food hot and cold food cold. Proper ticket times on all courses and measuring portions and proteins to be exact everytime. Each dish should and will be presented to the guest the same each and every time.</li>
+                <li>Food cost will be between 25%-29%</li>
+                <li>Beginning inventory - all protein will be inventoried every night to the p-mix to see how many mistakes or giveaways we are doing.</li>
+                <li>Proper storage throughout the line and legendary cleaning / executive chef sets the standard</li>
+                <li>Watching labor in the kitchen is hard. Everyone must punch in no more than 5 minutes before or after their shift. For 20 min a day watching that clock I bet you will save .5% a month off labor costs.</li>
+                <li>The Figure 8 Team does their figure 8’s around the kitchen like a well- oiled machine.</li>
+                <li>An A+ with the board of health, grease traps completed within 4 weeks of our completed project.</li>
+                <li>Proper equipment for the team in the kitchen to work well. Gaskets, pans, proper refrigeration, working ovens, ice machines that are spotless.</li>
+                <li>Menu development</li>
+              </ol>
+              <p>This will come with a test after 2 weeks and another on the last day.</p>
+              <p>The Figure 8 Group LLC will be available for 2 days or nights a week for 2 weeks to assess any problems not completed!!!</p>
+              <p class="lead"><b>$80 an hour or $5,500 for the entire project for 4 weeks</b></p>
+            </div>
+          </div>
+
+          <div class="row" id="bar">
+            <div class="col-12 col-md order-md-last col-overlap-right">
+              <img src="static/images/bar.png" class="img-fluid" alt="Bar">
+            </div>
+            <div class="col-12 col-md col-overlap-left col-overlap-text">
+              <h2 class="display">Legendary <br>Bar</h2>
+              <ol>
+                <li>Revamp the bar (organize)</li>
+                <li>Clean from top to bottom</li>
+                <li>Organize liquor, wine, and beer rooms</li>
+                <li>Take beginning inventory</li>
+                <li>Set up new sheets with new and updated prices</li>
+                <li>Return unwanted liquor, wine, and beer or use in new cocktails</li>
+                <li>Teach pours to be accurate across all bartenders</li>
+                <li>Set up weekly bar meetings with bar notes four weeks worth to set a legendary standard and a test given to all bartenders that they must pass with a 95% grade to go back on the bar</li>
+                <li>Set all bar costs in line at the end of the four weeks</li>
+              </ol>
+              <p>GM and or Owner need to be present to put away orders.</p>
+              <p>The Figure 8 Group LLC will be available for 1 night for 3 weeks to come back and help fix any unresolved issues at no cost.</p>
+              <p class="lead"><b>$75 an hour for 4 weeks or $6,000 for entire project</b></p>
+            </div>
+          </div>
+
+          <div class="row" id="service">
+            <div class="col-12 col-md col-overlap-left">
+              <img src="static/images/service.png" class="img-fluid" alt="Waiter carrying a plate of food">
+            </div>
+            <div class="col-12 col-md col-overlap-right col-overlap-text">
+              <h2 class="display">Legendary <br>Service</h2>
+              <ol>
+                <li>Instruct all front of the house teammates the proper way to work the floor as a team!!!!!!!</li>
+                <li>Then coach them how to work individually at their #1 position.</li>
+                <li>Once they complete that task train them on job #2. Every team member has 2 positions. Otherwise, the restaurant will not succeed.</li>
+                <li>Train and teach every F.O.H staff the bar ingredients, coffee drinks and menu items. This is a 2-week process.</li>
+                <li>Clean, sanitize the F.O.H completely.</li>
+                <li>Show service staff the 10 steps of service and serve with legendary service.</li>
+                <li>Go over sidework in depth.</li>
+                <li>Hire or terminate with GM/owners authority the team members that will not fit into the future of the restaurant's plan.</li>
+                <li>Tests will be given written, performance, knowledge. The individual must pass every test with a 95% or better. If not, they can not work the floor.</li>
+              </ol>
+              <p>The Figure 8 Group LLC will be available for 2 nights for 2 weeks to come back and help fix any unresolved issues at no cost.</p>
+              <p class="lead"><b>$90 an hour or $7,000 for the entire project for 4 weeks</b></p>
+            </div>
+          </div>
+
+          <div class="row mb-0" id="social">
+            <div class="col-12 col-md order-md-last col-overlap-right">
+              <img src="static/images/social.png" class="img-fluid" alt="Person taking a picture of food with their phone">
+            </div>
+            <div class="col-12 col-md col-overlap-left col-overlap-text">
+              <h2 class="display">Legendary <br>Social Media & Public Relations</h2>
+              <h4>Social Media</h4>
+              <ol>
+                <li>Creation of quarterly social media calendars</li>
+                  <ul>
+                    <li>Up to 4 platforms</li>
+                    <li>Add-on service for Tik Tok</li>
+                  </ul>
+                <li>Maintenance of social media accounts</li>
+                  <ul>
+                    <li>Includes posting, responding to comments, engaging in following and followers to build rapport</li>
+                  </ul>
+                <li>Graphic Design</li>
+                  <ul>
+                    <li>For posts, websites, etc.</li>
+                  </ul>
+              </ol>
+              <h4 class="last">Public Relations</h4>
+              <ol>
+                <li>Formation and maintenance of company’s press kit</li>
+                  <ul>
+                    <li>Fact sheets, Bios, Boilerplate, Logo Variants</li>
+                  </ul>
+                <li>Press Releases, Media Alerts, Pitches for company news, events, etc.</li>
+                <li>Maintenance of company image in media</li>
+                  <ul>
+                    <li>Respond to reviews</li>
+                    <li>Invite media and influencers to restaurant to dine to result in a story or post</li>
+                  </ul>
+                <li>Ability to be flexible on what the company needs</li>
+                  <ul>
+                    <li>Add-on services like sending out press releases to the wire</li>
+                    <li>Additional fee to put a press release on PR Newsire</li>
+                  </ul>
+                <li>Formation of media lists for press releases and pitches</li>
+                <li>Send out pitches</li>
+              </ol>
+              <p class="lead"><b>$70 an hour, one month = $5,000</b></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="contact">
+          <div class="row">
+            <div class="col-12 col-md-5 col-lg-6">
+              <h2 class="display">Contact</h2>
+              <p class="mb-4">To get in touch, fill out this form or call <a href="tel:857-472-4189" style="text-decoration: underline;">857-472-4189</a>.</p>
+              <div class="callout">
+                <p class="mb-0"><span class="yellow"><b>LIMITED TIME OFFER</b></span><br>The Figure 8 Group will be picking one restaurant and/or bar that signs up by the end of August to receive 2 weeks of free services* so sign up today!</p>
+              </div>
+              <p class="smaller">* Choice of package is subject to approval by The Figure 8 Group.</p>
+            </div>
+            <div class="col-12 col-md-7 col-lg-6">
+		          <script src="https://cdn02.jotfor.ms/static/prototype.forms.js?3.3.43078" type="text/javascript"></script>
+              <script src="https://cdn03.jotfor.ms/static/jotform.forms.js?3.3.43078" type="text/javascript"></script>
+              <script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
+              <script defer src="https://cdn02.jotfor.ms/js/vendor/maskedinput.min.js?v=3.3.43078" type="text/javascript"></script>
+              <script defer src="https://cdn03.jotfor.ms/js/vendor/jquery.maskedinput.min.js?v=3.3.43078" type="text/javascript"></script>
+              <script src="https://cdn01.jotfor.ms/js/payments/validategateways.js?v=3.3.43078" type="text/javascript"></script>
+              <script type="text/javascript">
+                JotForm.newDefaultTheme = true;
+                JotForm.extendsNewTheme = false;
+                JotForm.singleProduct = false;
+                JotForm.newPaymentUIForNewCreatedForms = true;
+                JotForm.newPaymentUI = true;
+                JotForm.clearFieldOnHide="disable";
+                JotForm.submitError="jumpToFirstError";
+
+                JotForm.init(function(){
+                /*INIT-START*/
+                    setTimeout(function() {
+                        $('input_4').hint('you@example.com');
+                      }, 20);
+                    JotForm.setPhoneMaskingValidator( 'input_5_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023' );
+                if (window.JotForm && JotForm.accessible) $('input_6').setAttribute('tabindex',0);
+                    JotForm.setCustomHint( 'input_6', 'How can we help?' );
+                    JotForm.alterTexts(undefined);
+                /*INIT-END*/
+                });
+
+                JotForm.prepareCalculationsOnTheFly([null,null,{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},{"description":"","name":"name","qid":"3","text":"Name","type":"control_fullname"},{"description":"","name":"email","qid":"4","subLabel":"example@example.com","text":"Email","type":"control_email"},{"description":"","name":"phoneNumber","qid":"5","text":"Phone Number","type":"control_phone"},{"description":"","name":"typeA","qid":"6","subLabel":"","text":"Message","type":"control_textarea"}]);
+                setTimeout(function() {
+                JotForm.paymentExtrasOnTheFly([null,null,{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},{"description":"","name":"name","qid":"3","text":"Name","type":"control_fullname"},{"description":"","name":"email","qid":"4","subLabel":"example@example.com","text":"Email","type":"control_email"},{"description":"","name":"phoneNumber","qid":"5","text":"Phone Number","type":"control_phone"},{"description":"","name":"typeA","qid":"6","subLabel":"","text":"Message","type":"control_textarea"}]);}, 20); 
+              </script>
+
+              <form class="jotform-form" action="https://submit.jotform.com/submit/231797611962061" method="post" name="form_231797611962061" id="231797611962061" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="231797611962061" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" />
+                <div class="form-all">
+                  <div class="form-line jf-required" data-type="control_fullname" id="id_3" data-compound-hint="First name,Last name">
+                    <label class="form-label form-label-top form-label-auto form-label" id="label_3" for="first_3">
+                      Name<span class="form-required">*</span>
+                    </label>
+                    <div id="cid_3" class="form-input-wide jf-required" data-layout="full">
+                      <div data-wrapper-react="true">
+                        <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+                          <input type="text" id="first_3" name="q3_name[first]" class="form-textbox validate[required] form-control" data-defaultvalue="" autoComplete="section-input_3 given-name" size="10" value="" placeholder="First name" data-component="first" aria-labelledby="label_3 sublabel_3_first" aria-required="true" required="" />
+                          <label class="form-sub-label" for="first_3" id="sublabel_3_first" style="min-height:13px; display: none;" aria-hidden="false">First Name</label>
+                        </span>
+                        <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
+                          <input type="text" id="last_3" name="q3_name[last]" class="form-textbox validate[required] form-control" data-defaultvalue="" autoComplete="section-input_3 family-name" size="15" value="" placeholder="Last name" data-component="last" aria-labelledby="label_3 sublabel_3_last" aria-required="true" required="" />
+                          <label class="form-sub-label" for="last_3" id="sublabel_3_last" style="min-height:13px; display: none;" aria-hidden="false">Last Name</label>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-line jf-required" data-type="control_email" id="id_4">
+                    <label class="form-label form-label-top form-label-auto form-label" id="label_4" for="input_4">
+                      Email<span class="form-required">*</span>
+                    </label>
+                    <div id="cid_4" class="form-input-wide jf-required" data-layout="half">
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <input type="email" id="input_4" name="q4_email" class="form-textbox validate[required, Email] form-control" data-defaultvalue="" size="310" value="" placeholder="you@example.com" data-component="email" aria-labelledby="label_4 sublabel_input_4" aria-required="true" required="" />
+                        <label class="form-sub-label" for="input_4" id="sublabel_input_4" style="min-height:13px; display: none;" aria-hidden="false">example@example.com</label>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-line" data-type="control_phone" id="id_5">
+                    <label class="form-label form-label-top form-label-auto form-label" id="label_5" for="input_5_full"> Phone Number </label>
+                    <div id="cid_5" class="form-input-wide" data-layout="half">
+                      <span class="form-sub-label-container" style="vertical-align:top">
+                        <input type="tel" id="input_5_full" name="q5_phoneNumber[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask] form-control" data-defaultvalue="" autoComplete="section-input_5 tel-national" data-masked="true" value="" placeholder="(000) 000-0000" data-component="phone" aria-labelledby="label_5 sublabel_5_masked" />
+                        <label class="form-sub-label" for="input_5_full" id="sublabel_5_masked" style="min-height:13px; display: none;" aria-hidden="false">Please enter a valid phone number.</label>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-line jf-required" data-type="control_textarea" id="id_6">
+                    <label class="form-label form-label-top form-label-auto form-label" id="label_6" for="input_6">
+                      Message<span class="form-required">*</span>
+                    </label>
+                    <div id="cid_6" class="form-input-wide jf-required" data-layout="full">
+                      <textarea id="input_6" class="form-textarea validate[required] form-control" name="q6_typeA" style="height:163px;" data-component="textarea" required="" aria-labelledby="label_6" aria-required="true">
+                      </textarea>
+                    </div>
+                  </div>
+                  <div class="form-line" data-type="control_button" id="id_2">
+                    <div id="cid_2" class="form-input-wide" data-layout="full">
+                      <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+                        <button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField btn btn-primary" data-component="button" data-content="">Submit</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="display:none">Should be Empty: <input type="text" name="website" value="" /></div>
+                </div>
+                <script>
+                  JotForm.accessible = true;
+                </script>
+                <script src="https://cdn01.jotfor.ms/s/umd/c84e3ec82a7/for-accessibility-enhancer.js" type="text/javascript"></script>
+                <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="231797611962061" />
+                <script type="text/javascript">
+                  var all_spc = document.querySelectorAll("form[id='231797611962061'] .si" + "mple" + "_spc");
+                  for (var i = 0; i < all_spc.length; i++)
+                  {
+                    all_spc[i].value = "231797611962061-231797611962061";
+                  }
+                </script>
+              </form>
+
+              <script type="text/javascript">JotForm.ownerView=true;</script>
+              <script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.43078"></script>
+              <script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.43078"></script>
+              <script type="text/javascript">JotForm.isNewSACL=true;</script>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="charity">
+          <div class="row">
+            <div class="col-12 col-md-5 col-lg-6">
+              <h2 class="display">Charity</h2>
+            </div>
+            <div class="col-12 col-md-7 col-lg-6">
+              <p class="lead">The work the Figure 8 Group does will not only benefit the bars and restaurants we work with, but also the neighborhood these establishments are a part of. Over the next few months, we will be partnering with local organizations to host community events and fundraisers. Stay tuned for more information on how you can get involved and help us raise as much money as possible for some great causes!</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="row">
+          <div class="col-12 col-md">
+            <p class="brand-4 company-desktop">The <br>Figure 8 Group LLC</p>
+            <p class="brand-4 company-mobile" aria-hidden="true">The Figure 8 Group LLC</p>
+          </div>
+          <div class="col-12 col-md copyright align-self-md-end">
+            <div class="social-buttons d-flex justify-content-center justify-content-md-end">
+              <a class="btn btn-sm btn-icon" href="https://www.facebook.com/TheFigure8GroupBos" target="_blank" aria-label="Facebook"><i class="ri-facebook-line" role="none"></i></a>
+              <a class="btn btn-sm btn-icon" href="https://www.instagram.com/the.figure8group/" target="_blank" aria-label="Instagram"><i class="ri-instagram-line" role="none"></i></a>
+            </div>
+            <p class="smaller">&copy; 2023 The Figure 8 Group LLC</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <script>
+
+      $(document).on('scroll', function() {
+        var $nav = jQuery(".navbar");
+				var $hero = jQuery(".header-wrapper");
+				$nav.toggleClass('scrolled', jQuery(this).scrollTop() > ($hero.height()));
+			});
+
+      var animationButton = document.getElementById("animation-controls");
+      var animationState = 'playing';
+      var animation = bodymovin.loadAnimation({
+        container: document.getElementById('bm'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: false,
+        path: 'static/animation/data.json'
+      })
+
+      setTimeout(
+        function(){
+          animation.play();
+          animationButton.innerHTML = '<i class="ri-pause-line"></i>';
+          animationButton.setAttribute("aria-pressed", "true");
+          animationButton.setAttribute("aria-label", "Pause fireball animation");
+        }, 5000
+      );
+
+      function toggleAnimation(state) {
+        if (state == 'play') {
+          animation.play();
+          animationButton.innerHTML = '<i class="ri-pause-line"></i>';
+          animationButton.setAttribute("aria-pressed", "true");
+          animationButton.setAttribute("aria-label", "Pause fireball animation");
+          animationButton.setAttribute("onclick", "toggleAnimation('pause')");
+        } else {
+          animation.pause();
+          animationButton.innerHTML = '<i class="ri-play-line"></i>';
+          animationButton.setAttribute("aria-pressed", "false");
+          animationButton.setAttribute("aria-label", "Play fireball animation");
+          animationButton.setAttribute("onclick", "toggleAnimation('play')");
+        }
+      }
+
+      const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#navbar'
+      })
+
+      var audio = document.getElementById("music");
+      var audioButton = document.getElementById("audio-controls");
+      var audioTranscript = document.getElementById("audio-transcript");
+      function playAudio() {
+        if (audio.paused) {
+          audio.play();
+          audioButton.innerHTML = '<i class="ri-volume-mute-line"></i>';
+          audioButton.setAttribute("aria-pressed", "true");
+          audioButton.setAttribute("aria-label", "Pause audio");
+          audioTranscript.setAttribute("class", "visible");
+        } else {
+          audio.pause();
+          audioButton.innerHTML = '<i class="ri-volume-up-line"></i>';
+          audioButton.setAttribute("aria-pressed", "false");
+          audioButton.setAttribute("aria-label", "Play audio");
+        }
+      }
+
+      audio.addEventListener('play', function() { 
+        audioButton.innerHTML = '<i class="ri-volume-mute-line"></i>';
+        audioButton.setAttribute("aria-pressed", "true");
+        audioButton.setAttribute("aria-label", "Pause music");
+      });
+
+      (function() {
+        var isBootstrapEvent = false;
+        if (window.jQuery) {
+            var all = jQuery('*');
+            jQuery.each(['hide.bs.dropdown', 
+                'hide.bs.collapse', 
+                'hide.bs.modal', 
+                'hide.bs.tooltip',
+                'hide.bs.popover'], function(index, eventName) {
+                all.on(eventName, function( event ) {
+                    isBootstrapEvent = true;
+                });
+            });
+        }
+        var originalHide = Element.hide;
+        Element.addMethods({
+            hide: function(element) {
+                if(isBootstrapEvent) {
+                    isBootstrapEvent = false;
+                    return element;
+                }
+                return originalHide(element);
+            }
+        });
+      })();
+    </script>
+  
+  </body>
+</html>
