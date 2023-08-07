@@ -110,6 +110,14 @@ a {
   transition: $transition-base;
 }
 
+.lead {
+  font-size: 1rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: $lead-font-size;
+  }
+}
+
 ol {
   padding-left: 1.25rem;
 
@@ -148,6 +156,10 @@ ol {
       margin-top: 2rem;
     }
   }
+}
+
+hr {
+  border-color: $orange-300;
 }
 
 
@@ -207,7 +219,7 @@ a:focus-visible {
 }
 
 .navbar {
-  padding: 1.25rem 0 1rem;
+  padding: .25rem .5rem .25rem;
   opacity: 0;
   transition: $transition-base;
   top: -75px;
@@ -228,8 +240,20 @@ a:focus-visible {
   }
 }
 
-.navbar-expand .navbar-nav .nav-link {
-  padding: $nav-link-padding-y $nav-link-padding-x;
+.navbar-nav {
+  flex-direction: column;
+
+  @include media-breakpoint-up(md) { 
+    flex-direction: row;
+  }
+}
+
+.nav-link {
+  padding: $spacer;
+
+  @include media-breakpoint-up(md) { 
+    padding: $nav-link-padding-y $nav-link-padding-x;
+  }
 }
 
 .dropdown-toggle::after {
@@ -245,10 +269,28 @@ a:focus-visible {
 .dropdown-menu {
   color: $white;
   background-color: $black;
+  margin: 0 $spacer;
+
+  @include media-breakpoint-up(md) { 
+    margin: 0;
+  }
+}
+
+.navbar-nav .dropdown-menu {
+  position: static;
+
+  @include media-breakpoint-up(md) { 
+    position: absolute;
+  }
 }
 
 .dropdown-item {
   color: $white;
+  padding: $spacer;
+
+  @include media-breakpoint-up(md) { 
+    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+  }
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -259,6 +301,38 @@ a:focus-visible {
 .dropdown-item:hover, .dropdown-item:focus {
   color: $primary;
   background-color: transparent;
+}
+
+.navbar-collapse {
+  margin: 0;
+
+  @include media-breakpoint-up(md) {
+    margin: 0 -1rem;
+  }
+  @include media-breakpoint-up(lg) { 
+    margin: 0;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  padding: $spacer;
+}
+
+.navbar-brand {
+  padding: $spacer $spacer .5rem;
+
+  @include media-breakpoint-up(md) { 
+    padding: 0;
+  }
+}
+
+.navbar .container-fluid {
+  --bs-gutter-x: 0rem;
+
+  @include media-breakpoint-up(md) { 
+    --bs-gutter-x: 3rem;
+  }
 }
 
 
@@ -367,15 +441,27 @@ main.container {
 }
 
 .callout {
-  background-color: $yellow-900;
-  border: 1px $yellow-600 solid;
   padding: 1rem;
   border-radius: $border-radius-lg;
   margin-bottom: 0.75rem;
 }
 
+.pricing {
+  background-color: $orange-800;
+  border: 1px $orange-700 solid;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.offer {
+  background-color: $yellow-900;
+  border: 1px $yellow-800 solid;
+}
+
 .yellow {
   color: $yellow-500;
+  text-transform: uppercase;
+  font-weight: $font-weight-bold;
 }
 
 
